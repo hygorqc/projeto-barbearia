@@ -1,0 +1,36 @@
+#sobre {
+  display: grid;
+  grid-template-columns: 1fr minmax(20rem, 1fr);
+  gap: 3rem;
+  margin: 10rem 0;
+}
+
+.sobre-img {
+  border: 8px solid rgb(255, 191, 0);
+  border-top: none;
+  border-left: none;
+  border-radius: 2rem;
+}
+
+.sobre-local {
+  color: rgb(255, 191, 0);
+  margin: 2rem 0;
+  margin-bottom: 20px solid rgb(255, 0, 0);
+}
+
+.sobre-enderecos {
+  line-height: 2;
+  list-style: none;
+  font-weight: 500;
+  color: rgb(214, 214, 213);
+  ;
+}
+
+@media (max-width:815px) {
+  #sobre {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin: 10rem 0;
+  }
+}

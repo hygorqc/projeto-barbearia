@@ -1,0 +1,183 @@
+.logo {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.logo-color {
+  color: rgb(255, 191, 0);
+}
+
+
+.navegacao li a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid transparent;
+  font-weight: 600;
+}
+
+.navegacao li a:hover {
+  transition: 0.3s;
+  color: rgb(255, 191, 0);
+  border-bottom: 2px solid rgb(255, 191, 0);
+}
+
+.navegacao li {
+  list-style: none;
+}
+
+.header {
+  max-width: 120rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  min-height: 7rem;
+  margin: 1rem 0rem;
+}
+
+.navegacao {
+  display: flex;
+  gap: 3rem;
+}
+
+.intro {
+  transition: 1s;
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr minmax(20rem, 0.6fr);
+  margin: 10rem auto;
+  align-items: center;
+  gap: 3rem;
+}
+
+.barbeiro {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.foto-barbeiro {
+  max-width: 50rem;
+  size: 10rem;
+  border: 8px solid rgb(255, 191, 0);
+  border-top: none;
+  border-left: none;
+  border-radius: 2rem;
+}
+
+.infos h1 {
+  font-size: 3.2rem;
+}
+
+.bemvindo {
+  color: rgb(255, 191, 0);
+  margin-bottom: 2rem;
+}
+
+.info-text {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  color: rgb(214, 214, 213);
+  line-height: 1.5;
+}
+
+
+.botoes {
+  margin-top: 4rem;
+  font-weight: 700;
+}
+
+.btn-1 {
+  color: black;
+  background-color: rgb(255, 191, 0);
+  border: 2px solid rgb(255, 191, 0);
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.btn-2 {
+  box-sizing: border-box;
+  color: white;
+  border: 2px solid white;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  margin-left: 3rem;
+}
+
+.btn-1:hover {
+  color: rgb(255, 191, 0);
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+  background-color: black;
+}
+
+.btn-2:hover {
+  color: rgb(255, 191, 0);
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+@media (max-width:815px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .navegacao {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navegacao li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 191, 0);
+    background-color: rgb(255, 191, 0);
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.6rem;
+    font-weight: 600;
+  }
+
+  .navegacao li a:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  .intro {
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5rem auto;
+    gap: 3rem;
+    justify-items: center;
+  }
+
+  .infos {
+    text-align: center;
+  }
+
+  .botoes {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    margin: 1.5rem 0rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .botoes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-2 {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
